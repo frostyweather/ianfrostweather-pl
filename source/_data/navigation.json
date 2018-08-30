@@ -1,0 +1,32 @@
+{
+    "primaryNav" : {
+        "navItems" : [
+            {
+                "url" : "link.pages-category",
+                "label" : "Projects"
+            },
+            {
+                "url" : "link.pages-category-men",
+                "label" : "Blog"
+            },
+            {
+                "url" : "link.pages-category-kids",
+                "label" : "About"
+            }
+        ]
+    },
+    "footerNav" : [
+        {
+            "url" : "link.pages-category",
+            "label" : "Projects"
+        },
+        {
+            "url" : "link.pages-category-men",
+            "label" : "Blog"
+        },
+        {
+            "url" : "link.pages-category-kids",
+            "label" : "About"
+        }
+    ]
+}

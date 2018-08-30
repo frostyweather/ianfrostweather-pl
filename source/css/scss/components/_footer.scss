@@ -1,0 +1,39 @@
+/*------------------------------------*\
+    #FOOTER
+\*------------------------------------*/
+
+/**
+ * Footer
+ */
+.c-footer {
+	color: $color-white;
+	line-height: 1.2;
+	border-top: 3px solid $color-brand-orange;
+
+	&:before {
+		content: "";
+		display: block;
+		position: relative;
+		left: -3px;
+		height: 3px;
+		width: calc(100% + 3px);
+		background: $color-brand-blue-dark;
+
+	}
+}
+
+/**
+ * Footer nav
+ */
+.c-footer__info {
+	max-width: 40em;
+
+	a {
+		color: $color-gray-15;
+		text-decoration: underline;
+
+		&:hover, &:focus {
+			text-decoration: none;
+		}
+	}
+}

@@ -1,0 +1,27 @@
+<div class="c-media-block {{ styleModifier }}">
+	<div class="c-media-block__media">
+		{{# mediaBlockImg }}
+		{{> atoms-landscape }}
+		{{/ mediaBlockImg }}
+
+	</div><!-- end c-media-block__media -->
+
+	<div class="c-media-block__body">
+
+		<h2 class="c-media-block__heading">
+			{{# mediaBlockLink }}
+			<a href="{{ url }}" class="c-media-block__link">
+			{{/ mediaBlockLink }}
+				{{{ heading }}}
+			{{# mediaBlockLink }}
+			</a>
+			{{/ mediaBlockLink }}
+		</h2>
+
+		{{# description }}
+		<div class="c-media-block__desc">{{{ description }}}</div>
+		{{/ description }}
+
+	</div><!-- end c-media-block__body -->
+
+</div><!-- end c-media-block -->

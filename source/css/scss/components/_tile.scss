@@ -1,0 +1,94 @@
+/*------------------------------------*\
+	#TILE BLOCK
+\*------------------------------------*/
+
+/**
+ * 1) The tile block contains a span and headline overlayed on a background
+ */
+.c-tile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background: $color-dim-50;
+    color: $color-white;
+    border-bottom-right-radius: 4px;
+    padding: 1em 1em;
+    text-align: center;
+    overflow: hidden;
+    transition: all $anim-speed-quick $anim-ease;
+
+    &:hover, &:focus {
+        color: $color-white;
+    }
+
+    @media all and (min-width: 55rem) {
+	    padding: 4em 1em;
+    }
+}
+
+/**
+ * Featured tile block
+ */
+.c-tile--orange {
+	background: $color-brand-orange;
+    box-shadow: 0px 0px 0px 0px $color-brand-orange-med;
+    transition: box-shadow $anim-speed-quick $anim-ease;
+
+    &:hover, &:focus {
+        box-shadow: 8px 8px 0px 0px $color-brand-orange-med;
+    }
+
+}
+
+/**
+ * Featured tile block
+ */
+.c-tile--blue {
+	background: $color-brand-blue-dark;
+    box-shadow: 0px 0px 0px 0px $color-brand-blue-med;
+    transition: box-shadow $anim-speed-quick $anim-ease;
+
+    &:hover, &:focus {
+        box-shadow: 8px 8px 0px 0px $color-brand-blue-med;
+    }
+}
+
+/**
+ * Tile block value
+ */
+.c-tile__value {
+	font-size: 1.5rem;
+    line-height: 1.2;
+
+	/**
+	 * Tile value when inside featured tile parent selector
+	 */
+	.c-tile--featured & {
+	    font-size: 2.5rem;
+
+	    @media all and (min-width: $bp-med) {
+	    	font-size: 5rem;
+		}
+    }
+
+    @media all and (min-width: 55rem) {
+		font-size: 3rem;
+    }
+}
+
+.c-tile__label {
+    color: $color-gray-15;
+    font-weight: normal;
+    font-size: $font-size-med;
+}
+
+.c-tile__headline {
+    margin-bottom: 0.5rem;
+    text-transform: uppercase;
+}
+
+.c-tile__inner {
+
+}

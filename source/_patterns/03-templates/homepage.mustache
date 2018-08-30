@@ -1,0 +1,25 @@
+<div class="l-page-layout l-page-layout--two-column-fixed">
+
+	<div class="l-page-layout__secondary">
+		{{> organisms-header }}
+	</div>
+
+	<div class="l-page-layout__main">
+
+		<main role="main">
+
+			<div class="l-container">
+				<ul class="l-grid l-grid--2up">
+					{{# mediaBlock }}
+				<li class="l-grid__item">{{> molecules-media-block }}</li>
+					{{/ mediaBlock }}
+					{{# tileSection }}
+					<li class="l-grid__item">{{> molecules-tile }}</li>
+					{{/ tileSection }}
+				</ul>
+			</div>
+		</main>
+		{{> organisms-footer }}
+	</div>
+
+</div>

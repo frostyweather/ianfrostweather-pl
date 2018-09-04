@@ -7,17 +7,15 @@
  */
 .c-footer-nav {
 	display: block;
-	margin-right: 1rem;
 }
 
 /**
  * Footer Nav List
  */
 .c-footer-nav__list {
-	display: flex;
-	flex-direction: column;
 
 	@media all and (min-width: $bp-small) {
+		display: flex;
 		flex-direction: row;
 	}
 }
@@ -26,11 +24,7 @@
  * Footer Nav List Item
  */
 .c-footer-nav__item {
-	width: 50%;
-
-	@media all and (min-width: $bp-small) {
-		width: inherit;
-	}
+	width: auto;
 }
 
 /**
@@ -38,14 +32,17 @@
  */
 .c-footer-nav__link {
 	font-family: $font-secondary;
-	font-weight: bold;
 	text-transform: uppercase;
-	letter-spacing: 1px;
 	display: block;
-	padding: 1rem 2rem 1rem 0;
+	padding: 1rem 0;
 	color: $color-gray-73;
+	padding-bottom: 2px;
 
 	&:hover, &:focus {
-		color: $color-gray-35;
+		color: $color-brand-orange;
+	}
+
+	@media all and (min-width: $bp-small) {
+		margin-right: 2rem;
 	}
 }

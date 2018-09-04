@@ -11,7 +11,9 @@
 	padding: 1rem;
 }
 
-
+.l-linelength-container {
+	max-width: 38rem;
+}
 
 
 
@@ -33,26 +35,17 @@
  * 1) The main section is the primary content container
  */
 .l-page-layout__main {
-	display: flex;
-	-ms-flex-direction: column;
-	flex-direction: column;
-
-	/**
-	 * Main section of 2 column fixed layout
-	 * 1) Margin left equals width of the fixed positioned sidebar
-	 */
-	.l-page-layout--two-column > & {
-		height: 100vh;
-
-		@media all and (min-width: $bp-med) {
-			margin-left: 18rem;
-		}
-	}
+	display: block;
 
 	.l-page-layout--two-column-fixed > & {
+		display: flex;
+		flex-direction: column;
+		flex: 1;
+		height: 100vh;
+		padding: 1rem;
 
 		@media all and (min-width: $bp-med) {
-			height: 100vh;
+			margin-left: 2rem;
 		}
 	}
 }
@@ -87,6 +80,10 @@
  */
 .l-grid {
 	margin: 0 -0.5rem;
+
+	@supports (display: grid) {
+		grid-gap: 0.5rem;
+	}
 }
 
 /**
@@ -96,15 +93,6 @@
 	display: flex;
 	padding: $pad-half;
 
-	.l-grid--skewed & {
-		max-width: 20rem;
-
-		@supports (display: grid) {
-			display: block;
-			width: 100%;
-		}
-	}
-
 	/**
 	 * Grid item within 2-up grid
 	 */
@@ -113,6 +101,11 @@
 	    @media all and (min-width: 40em) {
             width: 50%;
         }
+
+		@supports (display: grid) {
+			padding: 0;
+			width: 100%;
+		}
     }
 
 	/**
@@ -169,12 +162,6 @@
 	}
 }
 
-.l-grid--skewed {
-	@supports (display: grid) {
-
-	}
-}
-
 /**
  * 2-up grid
  * 1) These grid items grow from 1-up to 2-up
@@ -188,6 +175,16 @@
         flex-wrap: wrap; /* 2 */
         margin: 0 -0.5rem 1rem;
     }
+
+	@supports (display: grid) {
+		display: grid;
+		grid-template-columns: 1fr;
+		margin: 0;
+
+		@media all and (min-width: 40em) {
+			grid-template-columns: 1fr 1fr;
+		}
+	}
 }
 
 

@@ -1,0 +1,28 @@
+{
+	"title" : "Blog",
+	"pageTitle": "Welcome to my blog",
+	"pageDescription": "I enjoy writing about my experience as a web designer and previously as a meteorologist. Feel free to take a look.",
+	"tileSection" : {
+		"styleModifier": "l-grid--2up",
+		"tileList": [
+			{
+				"styleModifier": "c-tile--blue",
+				"url": "link.pages-blog-detail",
+				"headline":  "Web",
+				"description": "Web design and development posts"
+			},
+			{
+				"styleModifier": "c-tile--orange",
+				"url": "link.pages-blog-detail",
+				"headline": "Weather",
+				"description": "Previous forecasts and posts about being a meteorologist"
+			},
+			{
+				"styleModifier": "c-tile--blue",
+				"url": "link.pages-blog-detail",
+				"headline": "Life",
+				"description": "Random thoughts about life"
+			}
+		]
+    }
+}

@@ -2,30 +2,30 @@
     "primaryNav" : {
         "navItems" : [
             {
-                "url" : "link.pages-category",
+                "url" : "link.pages-projects",
                 "label" : "Projects"
             },
             {
-                "url" : "link.pages-category-men",
+                "url" : "link.pages-blog",
                 "label" : "Blog"
             },
             {
-                "url" : "link.pages-category-kids",
+                "url" : "link.pages-about",
                 "label" : "About"
             }
         ]
     },
     "footerNav" : [
         {
-            "url" : "link.pages-category",
+            "url" : "link.pages-projects",
             "label" : "Projects"
         },
         {
-            "url" : "link.pages-category-men",
+            "url" : "link.pages-blog",
             "label" : "Blog"
         },
         {
-            "url" : "link.pages-category-kids",
+            "url" : "link.pages-about",
             "label" : "About"
         }
     ]

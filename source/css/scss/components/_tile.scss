@@ -13,7 +13,6 @@
     width: 100%;
     background: $color-dim-50;
     color: $color-white;
-    border-bottom-right-radius: 4px;
     padding: 1em 1em;
     text-align: center;
     overflow: hidden;
@@ -87,6 +86,7 @@
 .c-tile__headline {
     margin-bottom: 0.5rem;
     text-transform: uppercase;
+    font-size: $font-size-xl;
 }
 
 .c-tile__inner {

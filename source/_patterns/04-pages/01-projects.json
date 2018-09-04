@@ -1,30 +1,22 @@
 {
-	"title" : "Home Page",
-	"mediaBlock" : {
-		"mediaBlockImg": {
-			"styleModifier": "c-media-block__img",
-			"imgLandscapeSrc": "../../images/ianharvard.jpg",
-			"imgLandscapeAlt": "Ian Frost"
-		},
-		"heading": "Hello World.",
-		"description": "My name is Ian Frost. I am a meteorologist turned web designer. I make awesome websites and design systems with great people to make companies better."
-	},
+	"title" : "Projects",
+    "headline" :  "Check out the Winter Collection",
 	"tileSection" : [
 		{
 			"styleModifier": "c-tile--blue",
-			"url" : "link.pages-projects",
+			"url": "link.pages-category",
 			"headline":  "Projects",
 			"description": "From small companies to large enterprises, I create web experiences both by myself and through collaboration with colleagues."
 		},
 		{
 			"styleModifier": "c-tile--orange",
-			"url" : "link.pages-blog",
+			"url": "link.pages-category",
 			"headline": "Blog",
 			"description": "From weather to web design to life, I share my knowledge with the world through writing."
 		},
 		{
 			"styleModifier": "c-tile--blue",
-			"url" : "link.pages-about",
+			"url": "link.pages-category",
 			"headline": "About",
 			"description": "Learn more about me or feel free to contact me."
 		}

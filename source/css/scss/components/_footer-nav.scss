@@ -25,6 +25,26 @@
  */
 .c-footer-nav__item {
 	width: auto;
+
+	/**
+	 * Wordpress targeting footer nav link
+	 */
+	a {
+		font-family: $font-secondary;
+		text-transform: uppercase;
+		display: block;
+		padding: 1rem 0;
+		color: $color-gray-73;
+		padding-bottom: 2px;
+
+		&:hover, &:focus {
+			color: $color-brand-orange;
+		}
+
+		@media all and (min-width: $bp-small) {
+			margin-right: 2rem;
+		}
+	}
 }
 
 /**

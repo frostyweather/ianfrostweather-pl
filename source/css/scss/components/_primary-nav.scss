@@ -6,7 +6,11 @@
  * Navigation tag
  */
 .c-primary-nav {
+	margin-left: auto;
 
+	@media all and (min-width: $bp-med) {
+		margin-left: 0;
+	}
 }
 
 /**

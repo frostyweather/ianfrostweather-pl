@@ -127,6 +127,7 @@ $font-size-xl: 3rem;
     #LAYOUT
 \*------------------------------------*/
 $l-max-width: 80em;
+$l-linelength: 38rem;
 
 /**
  * Spacing Defaults
@@ -172,7 +173,7 @@ $border-radius: 6px;
 /**
  * Animation Duration
  */
-$anim-speed-quick: 0.2s;
+$anim-fade-quick: 0.2s;
 
 /**
  * Animation Easing

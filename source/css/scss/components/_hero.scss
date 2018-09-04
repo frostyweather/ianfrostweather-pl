@@ -29,7 +29,7 @@
     letter-spacing: 1px;
     padding: 1rem;
     font-size: 2.6rem;
-    transition: all $anim-speed-quick $anim-ease;
+    transition: all $anim-fade-quick $anim-ease;
 
     @media all and (min-width: $bp-large) {
         position: absolute;

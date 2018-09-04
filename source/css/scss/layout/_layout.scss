@@ -12,7 +12,7 @@
 }
 
 .l-linelength-container {
-	max-width: 38rem;
+	max-width: $l-linelength;
 }
 
 
@@ -41,7 +41,7 @@
 		display: flex;
 		flex-direction: column;
 		flex: 1;
-		height: 100vh;
+		min-height: 100vh;
 		padding: 1rem;
 
 		@media all and (min-width: $bp-med) {

@@ -16,7 +16,7 @@
     padding: 1em 1em;
     text-align: center;
     overflow: hidden;
-    transition: all $anim-speed-quick $anim-ease;
+    transition: all $anim-fade-quick $anim-ease;
 
     &:hover, &:focus {
         color: $color-white;
@@ -33,7 +33,7 @@
 .c-tile--orange {
 	background: $color-brand-orange;
     box-shadow: 0px 0px 0px 0px $color-brand-orange-med;
-    transition: box-shadow $anim-speed-quick $anim-ease;
+    transition: box-shadow $anim-fade-quick $anim-ease;
 
     &:hover, &:focus {
         box-shadow: 8px 8px 0px 0px $color-brand-orange-med;
@@ -47,7 +47,7 @@
 .c-tile--blue {
 	background: $color-brand-blue-dark;
     box-shadow: 0px 0px 0px 0px $color-brand-blue-med;
-    transition: box-shadow $anim-speed-quick $anim-ease;
+    transition: box-shadow $anim-fade-quick $anim-ease;
 
     &:hover, &:focus {
         box-shadow: 8px 8px 0px 0px $color-brand-blue-med;

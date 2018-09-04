@@ -1,17 +1,33 @@
-<a href="{{ url }}" class="c-stacked-block {{ styleModifier }}">
+<div class="c-stacked-block {{ styleModifier }}">
 
 	<div class="c-stacked-block__header">
 		<div class="c-stacked-block__media">
-			{{> atoms-landscape:c-stacked-block__img }}
+			{{# stackedBlockLink }}
+			<a href="{{ url }}" class="c-stacked-block__media-link">
+			{{/ stackedBlockLink }}
+				{{> atoms-landscape:c-stacked-block__img }}
+			{{# stackedBlockLink }}
+			</a>
+			{{/ stackedBlockLink }}
 		</div>
 	</div>
 
 	<div class="c-stacked-block__body">
-		<h2 class="c-stacked-block__title">{{ headline }}</h2>
-		<p class="c-stacked-block__excerpt">{{ excerpt }}</p>
+		{{# stackedBlockLink }}
+		<a href="{{ url }}" class="c-stacked-block__title-link">
+		{{/ stackedBlockLink }}
+			<h2 class="c-stacked-block__title">{{ title }}</h2>
+		{{# stackedBlockLink }}
+		</a>
+		{{/ stackedBlockLink }}
+		{{# description }}
+		<p class="c-stacked-block__desc">{{ description }}</p>
+		{{/ description }}
 	</div><!-- end c-stacked-block__body -->
 
+	{{# stackedBlockFooter }}
 	<div class="c-stacked-block__footer">
 		<p class="c-stacked-block__meta">{{ label }}</p>
 	</div>
-</a><!-- end c-stacked-block -->
+	{{/ stackedBlockFooter }}
+</div><!-- end c-stacked-block -->

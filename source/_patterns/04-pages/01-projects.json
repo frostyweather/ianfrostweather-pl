@@ -1,24 +1,28 @@
 {
 	"title" : "Projects",
-    "headline" :  "Check out the Winter Collection",
-	"tileSection" : [
+	"pageTitle": "Projects",
+	"htmlText": "<p>Frontend design is my cup of tea and I have worked on numerous projects focusing on the structure and organization of consistent HTML, CSS, and presentational Javascript. Whether it is a website redesign and corresponding design system for a Fortune 5 company, a site redesign for a small company in Pittsburgh, or somewhere in between, I am happy to help out.</p><p>I work quickly. I work modularly. I work in a way that will help organizations work fast but keep consistency with their brand across the board.</p><p>I am fortunate to have worked with some of the best designers and developers in the web design community. Together, we focus on collaborating to create a solid product that can be built upon in the future. Some of these projects are listed below.</p>",
+	"stackedBlockList" : [
+        {
+            "styleModifier" : "",
+			"title": "Unity Design System",
+			"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+        },
 		{
-			"styleModifier": "c-tile--blue",
-			"url": "link.pages-category",
-			"headline":  "Projects",
-			"description": "From small companies to large enterprises, I create web experiences both by myself and through collaboration with colleagues."
-		},
+            "styleModifier" : "",
+			"stackedBlockLink": {
+				"url": "#"
+			},
+			"title": "Harvard Business School Digital Initiative",
+			"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+        },
 		{
-			"styleModifier": "c-tile--orange",
-			"url": "link.pages-category",
-			"headline": "Blog",
-			"description": "From weather to web design to life, I share my knowledge with the world through writing."
-		},
-		{
-			"styleModifier": "c-tile--blue",
-			"url": "link.pages-category",
-			"headline": "About",
-			"description": "Learn more about me or feel free to contact me."
-		}
-    ]
+            "styleModifier" : "",
+			"stackedBlockLink": {
+				"url": "#"
+			},
+			"title": "About.com",
+			"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+        }
+	]
 }

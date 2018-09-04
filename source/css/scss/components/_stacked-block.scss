@@ -8,21 +8,52 @@
  .c-stacked-block {
 	 display: flex;
      flex-direction: column;
-	 transition: transform 0.2s ease;
+ }
 
-	 &:hover, &:focus {
-		 transform: scale(1.05);
-	 }
+ .c-stacked-block__media {
+     margin-bottom: 0.5rem;
+ }
+
+ .c-stacked-block__img {
+     display: block;
+     border: 1px solid $color-brand-orange;
+     outline: 1px solid $color-brand-blue-dark;
+
+     .c-stacked-block__media-link & {
+         box-shadow: 0px 0px 0px 0px $color-brand-blue;
+         transition: box-shadow $anim-fade-quick $anim-ease;
+     }
+
+     .c-stacked-block__media-link:hover &, .c-stacked-block__media-link:focus & {
+         box-shadow: 8px 8px 0px 0px $color-brand-blue-dark;
+     }
  }
 
  .c-stacked-block__body {
+     max-width: $l-linelength;
      flex: 1;
  }
 
+ .c-stacked-block__title-link {
+     display: block;
+     color: inherit;
+     margin-bottom: 0.5rem;
+
+     &:hover, &:focus {
+         color: $color-brand-orange;
+     }
+ }
+
 .c-stacked-block__title {
+    margin-bottom: 0.5rem;
 	text-transform: uppercase;
 	letter-spacing: 1px;
-	color: $color-brand-blue;
+
+    .c-stacked-block__title-link & {
+        display: inline;
+        margin-bottom: 0;
+        box-shadow: inset 0px -1px 0px 0px $color-brand-blue-dark, inset 0px -2px 0px 0px $color-brand-orange;
+    }
 }
 
 .c-stacked-block__excerpt {
@@ -30,7 +61,6 @@
 }
 
 .c-stacked-block__meta {
-	color: $color-brand-blue;
 	font-size: $font-size-med-2;
 	font-weight: bold;
 	text-align: center;

@@ -34,7 +34,7 @@
     color: $color-white;
     padding: $pad-half;
     font-size: 1.4rem;
-    transition: all $anim-speed-quick $anim-ease;
+    transition: all $anim-fade-quick $anim-ease;
 
     .c-tout:hover &, .c-tout:focus & {
         padding-bottom: 2rem;

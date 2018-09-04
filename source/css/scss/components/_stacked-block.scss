@@ -11,7 +11,7 @@
  }
 
  .c-stacked-block__media {
-     margin-bottom: 0.5rem;
+     margin-bottom: 1rem;
  }
 
  .c-stacked-block__img {
@@ -37,7 +37,7 @@
  .c-stacked-block__title-link {
      display: block;
      color: inherit;
-     margin-bottom: 0.5rem;
+     margin-bottom: 1rem;
 
      &:hover, &:focus {
          color: $color-brand-orange;
@@ -45,7 +45,7 @@
  }
 
 .c-stacked-block__title {
-    margin-bottom: 0.5rem;
+    margin-bottom: 1rem;
 	text-transform: uppercase;
 	letter-spacing: 1px;
 

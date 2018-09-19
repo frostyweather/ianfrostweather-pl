@@ -58,6 +58,9 @@
  *    responsive environments "sidebar"
  */
 .l-page-layout__secondary {
+	background: $color-white;
+	z-index: 2;
+	
 	/**
 	 * Secondary section in a two-column fixed layout
 	 * 1) This is a fixed element

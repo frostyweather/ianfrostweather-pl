@@ -29,6 +29,7 @@
 /*------------------------------------*\
     #COMPONENTS
 \*------------------------------------*/
+@import "scss/components/airplane";
 @import "scss/components/buttons";
 @import "scss/components/footer";
 @import "scss/components/footer-nav";
@@ -72,3 +73,8 @@
     #UTILITIES
 \*------------------------------------*/
 @import "scss/utilities/visibility";
+
+/*------------------------------------*\
+    #ANIMATION
+\*------------------------------------*/
+@import "scss/animation/animation";

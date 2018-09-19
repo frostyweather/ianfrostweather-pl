@@ -8,16 +8,19 @@
 
 		<main role="main">
 
-			<div class="l-container">
-				<ul class="l-grid l-grid--2up">
-					{{# mediaBlock }}
-				<li class="l-grid__item">{{> molecules-media-block }}</li>
-					{{/ mediaBlock }}
-					{{# tileSection }}
-					<li class="l-grid__item">{{> molecules-tile }}</li>
-					{{/ tileSection }}
-				</ul>
-			</div>
+				<div class="l-container">
+					<ul class="l-grid l-grid--2up js-slide">
+						{{# mediaBlock }}
+					<li class="l-grid__item">{{> molecules-media-block }}</li>
+						{{/ mediaBlock }}
+						{{# tileSection }}
+						<li class="l-grid__item">{{> molecules-tile }}</li>
+						{{/ tileSection }}
+					</ul>
+				</div>
+				<div class="u-overflow-x-hidden">
+					{{> atoms-airplane }}
+				</div>
 		</main>
 		{{> organisms-footer }}
 	</div>

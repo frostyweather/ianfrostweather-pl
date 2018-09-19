@@ -1,0 +1,38 @@
+/*------------------------------------*\
+    #ANIMATION
+\*------------------------------------*/
+
+
+.js-slide {
+	animation: slideIn 1.5s linear;
+}
+
+
+/**
+ * Slide in
+ */
+@keyframes slideIn {
+	0% {
+		transform: translateX(-100vw);
+	}
+	100% {
+		transform: translateX(0);
+	}
+}
+
+/**
+ * Slide in
+ */
+@keyframes slideOut {
+	0% {
+		top: 50%;
+		transform: translateX(0);
+	}
+	50% {
+		top: 75%;
+	}
+	100% {
+		top: 50%;
+		transform: translateX(150vw);
+	}
+}

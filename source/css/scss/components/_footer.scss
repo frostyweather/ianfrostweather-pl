@@ -6,9 +6,11 @@
  * Footer
  */
 .c-footer {
+	position: relative;
 	color: $color-white;
 	line-height: 1.2;
 	margin-top: 2rem;
+	overflow: hidden;
 
 	&:before {
 		content: "";
@@ -23,18 +25,20 @@
 	background: $color-brand-blue-dark;
 }
 
-/**
- * Footer nav
- */
-.c-footer__info {
-	max-width: 40em;
+.c-footer__sun {
+	display: block;
+	height: 10rem;
+	width: 10rem;
+	background: $color-brand-orange;
+	border-radius: 50%;
+	position: absolute;
+	bottom: 2rem;
+	left: 6rem;
+	z-index: -1;
+	transform: translateY(50px);
+	transition: transform $anim-fade-quick $anim-ease;
 
-	a {
-		color: $color-gray-15;
-		text-decoration: underline;
-
-		&:hover, &:focus {
-			text-decoration: none;
-		}
+	&.is-risen {
+		transform: translateY(-40px);
 	}
 }

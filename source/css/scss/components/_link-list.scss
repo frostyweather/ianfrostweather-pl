@@ -2,18 +2,23 @@
     #LINK LIST
 \*------------------------------------*/
 
+.c-link-list__link {
+	padding: 1rem 0;
+}
+
 /**
  * Link list link text
  */
 .c-link-list__link-text{
-	display: block;
 	text-transform: uppercase;
 	color: $color-gray-73;
 	font-size: $font-size-med-2;
 	font-family: $font-secondary;
 	font-weight: bold;
-}
+	box-shadow: inset 0px -1px 0px 0px $color-brand-blue-dark, inset 0px -2px 0px 0px $color-brand-orange;
+	transition: color $anim-fade-quick $anim-ease;
 
-.c-link-list__link {
-	padding: 1rem 0;
+	.c-link-list__link:hover &, .c-link-list__link:focus & {
+		color: $color-brand-orange;
+	}
 }

@@ -4,14 +4,14 @@
     {{# items }}
     <li class="c-link-list__item l-grid__item">
 
-        <a href="{{ url }}" class="c-link-list__link">
             <div class="c-link-list__body">
-                <span class="c-link-list__link-text">{{{ cta }}}</span>
+                <a href="{{ url }}" class="c-link-list__link">
+                    <span class="c-link-list__link-text">{{{ cta }}}</span>
+                </a><!--end c-link-list__link-->
                 {{# description }}
                 <div class="c-link-list__desc c-text-passage l-linelength-container">{{ description }}</div>
                 {{/ description }}
             </div>
-        </a><!--end c-link-list__link-->
 
     </li><!--end c-link-list__item-->
 

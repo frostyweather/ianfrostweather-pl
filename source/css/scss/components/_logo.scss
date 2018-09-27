@@ -9,10 +9,26 @@
 
 .c-logo-link {
 	display: inline-block;
-	max-width: 10rem;
 	margin-right: 2rem;
+	max-width: 10rem;
 
 	@media all and (min-width: $bp-med) {
 		margin-right: 0;
+		max-width: none;
 	}
+}
+
+.js-circle-1 {
+	transform: translateX(-100vw);
+	animation: spinSlide 0.5s linear forwards 0.5s;
+}
+
+.js-circle-2 {
+	transform: translateX(-100vw);
+	animation: spinSlide 0.5s linear forwards 0.25s;
+}
+
+.js-circle-3 {
+	transform: translateX(-100vw);
+	animation: spinSlide 0.5s forwards linear;
 }

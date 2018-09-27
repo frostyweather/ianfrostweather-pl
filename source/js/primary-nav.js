@@ -2,12 +2,26 @@
     #PRIMARY NAVIGATION
 \*------------------------------------*/
 /**
- * Toggles active class on the primary nav item
- * 1) Select all nav dropdown triggers and cycle through them
- * 2) On click, find the nav dropdown trigger parent
- * 3) If the nav dropdown trigger parent already has active class, remove it.
- * 4) If the nav dropdown trigger parent does not have an active class, add it.
+ *
  */
-(function(){
 
-})();
+document.body.classList.add("js");
+
+window.addEventListener("scroll", function(event) {
+    var element = document.documentElement;
+    var offset = element.scrollTop + window.innerHeight;
+    var height = element.offsetHeight;
+    var sun = document.querySelector('.c-footer__sun');
+
+    console.log('offset = ' + offset);
+    console.log('height = ' + height);
+
+    if (offset >= height) {
+        sun.classList.add('is-risen');
+    }
+    else {
+        if(sun.classList.contains('is-risen')) {
+            sun.classList.remove('is-risen');
+        }
+    }
+});

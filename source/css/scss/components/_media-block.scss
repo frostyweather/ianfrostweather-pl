@@ -19,6 +19,7 @@
  * 1) This is the container that holds the image (or media)
  */
 .c-media-block__media {
+	max-width: 25rem;
 	@media all and (min-width: $bp-xl) {
 		width: 35%;
 		max-width: 15rem;

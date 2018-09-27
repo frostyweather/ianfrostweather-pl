@@ -6,14 +6,12 @@
  * Header
  */
 .c-header {
-	margin-bottom: 2rem;
 	padding: 1rem;
 
 	@media all and (min-width: $bp-med) {
 		position: sticky;
 		top: 0;
-		width: 13rem;
-		border-bottom-right-radius: 4px;
+		width: 15rem;
 		margin-bottom: 0;
 	}
 }

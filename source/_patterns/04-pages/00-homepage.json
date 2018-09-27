@@ -1,13 +1,14 @@
 {
 	"title" : "Home Page",
 	"mediaBlock" : {
+		"styleModifier": "c-media-block--large",
 		"mediaBlockImg": {
 			"styleModifier": "c-media-block__img",
 			"imgLandscapeSrc": "../../images/ianharvard.jpg",
 			"imgLandscapeAlt": "Ian Frost"
 		},
-		"heading": "Hello World.",
-		"description": "My name is Ian Frost. I am a meteorologist turned web designer. I make awesome websites and design systems with great people to make companies better."
+		"heading": "Heyo. I'm Ian Frost.",
+		"description": "I am a meteorologist turned web designer. I make awesome websites and design systems with great people to make companies better. Feel free to check out any of my web design projects or blog posts."
 	},
 	"tileSection" : [
 		{
@@ -18,15 +19,41 @@
 		},
 		{
 			"styleModifier": "c-tile--orange",
-			"url" : "link.pages-blog",
-			"headline": "Blog",
-			"description": "From weather to web design to life, I share my knowledge with the world through writing."
-		},
-		{
-			"styleModifier": "c-tile--blue",
 			"url" : "link.pages-about",
 			"headline": "About",
 			"description": "Learn more about me or feel free to contact me."
 		}
-    ]
+    ],
+	"linkList": {
+		"styleModifier": "l-grid l-grid--2up u-margin-bottom",
+        "items": [
+            {
+                "url": "#",
+                "cta": "Blog post 1"
+            },
+            {
+                "url": "#",
+                "cta": "Blog post 2"
+            },
+            {
+                "url": "#",
+                "cta": "Blog post 3"
+            },
+			{
+                "url": "#",
+                "cta": "Blog post 4"
+            }
+        ]
+    },
+	"linkListButtonGroup": {
+		"styleModifier": "c-btn-group--centered",
+		"buttonGroup" : [
+			{
+				"styleModifier": "c-btn--bare",
+				"buttonTag": false,
+				"linkTag": true,
+				"buttonText": "See All Blog Posts"
+			}
+		]
+	}
 }

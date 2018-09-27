@@ -9,20 +9,30 @@
 		<main role="main">
 
 				<div class="l-container">
-					<ul class="l-grid l-grid--2up js-slide">
+					<section class="c-section js-slide">
 						{{# mediaBlock }}
-					<li class="l-grid__item">{{> molecules-media-block }}</li>
+						{{> molecules-media-block }}</li>
 						{{/ mediaBlock }}
-						{{# tileSection }}
-						<li class="l-grid__item">{{> molecules-tile }}</li>
-						{{/ tileSection }}
-					</ul>
+						<ul class="l-grid l-grid--2up">
+							{{# tileSection }}
+							<li class="l-grid__item">{{> molecules-tile }}</li>
+							{{/ tileSection }}
+						</ul>
+					</section>
+					<section class="c-section js-slide">
+						<header class="c-section-header">
+							<h2 class="c-section-header__title">Latest from the Blog</h2>
+							{{> molecules-link-list }}
+							{{# linkListButtonGroup}}
+							{{> organisms-button-group }}
+							{{/ linkListButtonGroup }}
+						</header>
+					</section>
 				</div>
 				<div class="u-overflow-x-hidden">
 					{{> atoms-airplane }}
 				</div>
 		</main>
-		{{> organisms-footer }}
 	</div>
-
 </div>
+{{> organisms-footer }}

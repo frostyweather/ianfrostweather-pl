@@ -32,5 +32,21 @@
         {},
         {},
         {}
-    ]
+    ],
+    "linkList": {
+        "items": [
+            {
+                "url": "#",
+                "cta": "Link List Item 1"
+            },
+            {
+                "url": "#",
+                "cta": "Link List Item 2"
+            },
+            {
+                "url": "#",
+                "cta": "Link List Item 3"
+            }
+        ]
+    }
 }

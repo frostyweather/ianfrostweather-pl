@@ -1,0 +1,19 @@
+/*------------------------------------*\
+    #LINK LIST
+\*------------------------------------*/
+
+/**
+ * Link list link text
+ */
+.c-link-list__link-text{
+	display: block;
+	text-transform: uppercase;
+	color: $color-gray-73;
+	font-size: $font-size-med-2;
+	font-family: $font-secondary;
+	font-weight: bold;
+}
+
+.c-link-list__link {
+	padding: 1rem 0;
+}

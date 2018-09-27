@@ -1,0 +1,21 @@
+{{# linkList }}
+<ul class="c-link-list {{ styleModifier }}">
+
+    {{# items }}
+    <li class="c-link-list__item l-grid__item">
+
+        <a href="{{ url }}" class="c-link-list__link">
+            <div class="c-link-list__body">
+                <span class="c-link-list__link-text">{{{ cta }}}</span>
+                {{# description }}
+                <div class="c-link-list__desc c-text-passage l-linelength-container">{{ description }}</div>
+                {{/ description }}
+            </div>
+        </a><!--end c-link-list__link-->
+
+    </li><!--end c-link-list__item-->
+
+    {{/ items }}
+
+</ul><!--end c-link-list-->
+{{/ linkList }}

@@ -8,19 +8,19 @@
 .c-footer {
 	color: $color-white;
 	line-height: 1.2;
-	border-top: 3px solid $color-brand-orange;
 	margin-top: 2rem;
 
 	&:before {
 		content: "";
 		display: block;
-		position: relative;
-		left: -3px;
-		height: 3px;
-		width: calc(100% + 3px);
-		background: $color-brand-blue-dark;
+		background-image: url('../images/mountain-range.svg');
+		height: 200px;
 
 	}
+}
+
+.c-footer__inner {
+	background: $color-brand-blue-dark;
 }
 
 /**

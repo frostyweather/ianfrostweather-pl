@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="853px" height="200px" viewBox="0 0 853 200" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>mountain-range</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="mountain-range">
+            <polygon id="Path-6" fill="#A34903" points="0 200 0 169.32856 55.8672034 106.887164 72.8740536 122.016233 119.935597 35.9241112 187.532789 132.376001 212.724492 98.1534173 231.898722 150.202416 266.925318 98.1534173 312.96852 122.016233 358.848351 51.3522805 383.065278 122.016233 413.871474 98.1534173 450.575339 139.739322 520.138421 1 615.421437 169.32856 658.240797 106.887164 696.159048 150.202416 720.098246 83.2038095 739.305149 100.5 766.391948 35.9241112 853 169.32856 853 200"></polygon>
+            <polygon id="Path-9" stroke="#979797" fill="#FFFCFC" points="99 72.1602971 117.591155 87 137 60.5 119.814355 34"></polygon>
+            <polygon id="Path-9" stroke="#979797" fill="#FFFCFC" points="750 73.9126476 763.586474 73.9126476 772.311902 87 784 61.8330523 767 35"></polygon>
+            <polygon id="Path-9" stroke="#979797" fill="#FFFCFC" points="336 86.0440952 355.979289 104 355.979289 83.6040059 364.894419 92.6830575 370 83.6040059 358.733271 50"></polygon>
+            <polygon id="Path-9" stroke="#979797" fill="#FFFCFC" points="481 77.8829319 509.952083 91 546 47.0831414 535.938542 28.3250262 519.9025 0"></polygon>
+        </g>
+    </g>
+</svg>

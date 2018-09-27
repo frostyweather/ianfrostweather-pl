@@ -3,21 +3,14 @@
 \*------------------------------------*/
 
 /**
- * Section
- */
-.c-section {
-	position: relative;
-	margin: 0 0 $space-double;
-}
-
-/**
  * Section title
  */
-.c-section__title {
+.c-section-header__title {
 	position: relative;
 	padding: 1rem 0;
-	border-top: 3px solid $color-brand-blue;
-	border-bottom: 3px solid $color-brand-blue;
+	border-top: 3px solid $color-brand-orange;
+	border-bottom: 3px solid $color-brand-orange;
+	box-shadow: inset 0 -3px 0 0 $color-brand-blue-dark, inset 0 3px 0 0 $color-brand-blue-dark;
 	color: $color-gray-73;
 	margin-bottom: 1.5rem;
 	text-transform: uppercase;

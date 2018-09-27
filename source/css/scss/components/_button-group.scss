@@ -1,0 +1,15 @@
+/*------------------------------------*\
+    #BUTTONS
+\*------------------------------------*/
+
+/**
+ * Button
+ */
+.c-btn-group {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.c-btn-group--centered {
+	justify-content: center;
+}

@@ -56,7 +56,7 @@
     }
 }
 
-.c-stacked-block__excerpt {
+.c-stacked-block__desc {
 	margin-bottom: 0;
 }
 
@@ -64,4 +64,8 @@
 	font-size: $font-size-med-2;
 	font-weight: bold;
 	text-align: center;
+}
+
+.c-stacked-block-list__item {
+    margin-bottom: 2rem;
 }

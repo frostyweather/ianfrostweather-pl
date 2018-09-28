@@ -2,27 +2,49 @@
 	"title" : "Blog",
 	"pageTitle": "Welcome to my blog",
 	"pageDescription": "I enjoy writing about my experience as a web designer and previously as a meteorologist. Feel free to take a look.",
-	"tileSection" : {
-		"styleModifier": "l-grid--2up",
-		"tileList": [
+	"linkList": {
+		"styleModifier": "",
+        "items": [
+            {
+                "url": "link.pages-blog-detail",
+                "cta": "Blog post 1"
+            },
+            {
+                "url": "link.pages-blog-detail",
+                "cta": "Blog post 2"
+            },
+            {
+                "url": "link.pages-blog-detail",
+                "cta": "Blog post 3"
+            },
 			{
-				"styleModifier": "c-tile--blue",
-				"url": "link.pages-blog-detail",
-				"headline":  "Web",
-				"description": "Web design and development posts"
-			},
+                "url": "link.pages-blog-detail",
+                "cta": "Blog post 4"
+            },
 			{
-				"styleModifier": "c-tile--orange",
-				"url": "link.pages-blog-detail",
-				"headline": "Weather",
-				"description": "Previous forecasts and posts about being a meteorologist"
-			},
+                "url": "link.pages-blog-detail",
+                "cta": "Blog post 5"
+            },
+            {
+                "url": "link.pages-blog-detail",
+                "cta": "Blog post 6"
+            },
+            {
+                "url": "link.pages-blog-detail",
+                "cta": "Blog post 7"
+            },
 			{
-				"styleModifier": "c-tile--blue",
-				"url": "link.pages-blog-detail",
-				"headline": "Life",
-				"description": "Random thoughts about life"
-			}
-		]
+                "url": "link.pages-blog-detail",
+                "cta": "Blog post 8"
+            },
+			{
+                "url": "link.pages-blog-detail",
+                "cta": "Blog post 9"
+            },
+			{
+                "url": "link.pages-blog-detail",
+                "cta": "Blog post 10"
+            }
+        ]
     }
 }

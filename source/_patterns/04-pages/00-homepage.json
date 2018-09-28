@@ -28,19 +28,19 @@
 		"styleModifier": "l-grid l-grid--2up u-margin-bottom",
         "items": [
             {
-                "url": "#",
+                "url": "link.pages-blog-detail",
                 "cta": "Blog post 1"
             },
             {
-                "url": "#",
+                "url": "link.pages-blog-detail",
                 "cta": "Blog post 2"
             },
             {
-                "url": "#",
+                "url": "link.pages-blog-detail",
                 "cta": "Blog post 3"
             },
 			{
-                "url": "#",
+                "url": "link.pages-blog-detail",
                 "cta": "Blog post 4"
             }
         ]

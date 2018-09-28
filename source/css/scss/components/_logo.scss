@@ -20,15 +20,15 @@
 
 .js-circle-1 {
 	transform: translateY(-500px);
-	animation: spinSlide 1s linear forwards 0.5s;
+	animation: spinSlide 0.5s linear forwards 0.5s;
 }
 
 .js-circle-2 {
 	transform: translateY(500px);
-	animation: spinSlide 1s linear forwards 0.25s;
+	animation: spinSlide 0.5s linear forwards 0.25s;
 }
 
 .js-circle-3 {
 	transform: translateY(-500px);
-	animation: spinSlide 1s forwards linear;
+	animation: spinSlide 0.5s forwards linear;
 }

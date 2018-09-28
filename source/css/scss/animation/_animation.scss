@@ -43,13 +43,13 @@
  */
 @keyframes spinSlide {
 	0% {
-		transform: translateX(-100vw);
+		transform: translateY(-500px);
 		opacity: 0;
 	}
 	1% {
 		opacity: 1;
 	}
 	100% {
-		transform: translateX(0);
+		transform: translateY(0);
 	}
 }

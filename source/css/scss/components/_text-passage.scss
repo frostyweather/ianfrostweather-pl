@@ -9,6 +9,10 @@
 
 	p {
 		margin-bottom: 2rem;
+
+		.c-link-list__item & {
+			margin-bottom: 0;
+		}
 	}
 
 	/**

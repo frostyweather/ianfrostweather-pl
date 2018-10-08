@@ -6,6 +6,8 @@
 var gulp = require('gulp'),
   path = require('path'),
   sass = require('gulp-sass'),
+  concat = require("gulp-concat"),
+  uglify = require("gulp-uglify"),
   browserSync = require('browser-sync').create(),
   argv = require('minimist')(process.argv.slice(2)),
   chalk = require('chalk');
@@ -37,6 +39,31 @@ gulp.task('pl-sass', function(){
   return gulp.src(path.resolve(paths().source.css, '**/*.scss'))
     .pipe(sass().on('error', sass.logError))
     .pipe(gulp.dest(path.resolve(paths().public.css)));
+});
+
+/******************************************************
+ * CONCATENATE AND MINIFY
+ ******************************************************/
+gulp.task("concat-and-minify", function(done) {
+	// main app js file
+	gulp
+		.src("./source/js/*.js", "!./source/js/vendor")
+		.pipe(concat("frosty.js"))
+		.pipe(gulp.dest("./public/js/"));
+	gulp
+		.src("./source/js/*.js", "!./source/js/vendor")
+		.pipe(uglify())
+		.pipe(concat("frosty.min.js"))
+		.pipe(gulp.dest("./public/js/"));
+
+	// create 1 vendor.js file from all vendor plugin code
+	gulp
+		.src("./source/js/vendor/**/*.js")
+		.pipe(uglify())
+		.pipe(concat("frosty.min.js"))
+		.pipe(gulp.dest("./public/js"));
+
+	done();
 });
 
 
@@ -133,7 +160,8 @@ gulp.task('pl-assets', gulp.series(
   gulp.series('pl-sass', function(done){done();}), //CSS tasks
   'pl-copy:css',
   'pl-copy:styleguide',
-  'pl-copy:styleguide-css'
+  'pl-copy:styleguide-css',
+  "concat-and-minify"
 ));
 
 gulp.task('patternlab:version', function (done) {
@@ -213,6 +241,12 @@ function watch() {
       config: { awaitWriteFinish: true },
       tasks: gulp.series('pl-copy:styleguide', 'pl-copy:styleguide-css', reloadCSS)
     },
+    {
+		name: "JavaScript",
+		paths: [normalizePath(paths().source.js, "**", "*.js")],
+		config: { awaitWriteFinish: true },
+		tasks: gulp.series("concat-and-minify")
+	},
     {
       name: 'Source Files',
       paths: [

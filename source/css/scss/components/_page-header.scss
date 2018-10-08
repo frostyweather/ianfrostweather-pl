@@ -18,10 +18,15 @@
 
 	@media all and (min-width: $bp-med) {
 		font-size: 4rem;
+
+		.post & {
+			font-size: 3rem;
+		}
 	}
 }
 
 .c-page-header__desc {
+	margin-top: 1rem;
 	font-family: $font-secondary;
 	font-size: $font-size-med-2;
 }

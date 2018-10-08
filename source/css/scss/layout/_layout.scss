@@ -106,7 +106,6 @@
         }
 
 		@supports (display: grid) {
-			padding: 0;
 			width: 100%;
 		}
     }
@@ -162,6 +161,10 @@
 	   @media all and (min-width: 70em) {
 		   width: 20%;
 	   }
+	}
+
+	@supports (display: grid) {
+		padding: 0;
 	}
 }
 

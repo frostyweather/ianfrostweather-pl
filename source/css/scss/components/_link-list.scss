@@ -2,8 +2,16 @@
     #LINK LIST
 \*------------------------------------*/
 
+.c-link-list__item {
+	margin-bottom: 2rem;
+
+	.l-grid & {
+		margin-bottom: 0;
+	}
+}
+
 .c-link-list__link {
-	padding: 1rem 0;
+	display: block;
 }
 
 /**
@@ -21,4 +29,26 @@
 	.c-link-list__link:hover &, .c-link-list__link:focus & {
 		color: $color-brand-orange;
 	}
+}
+
+.c-link-list__kicker-link {
+	display: block;
+	margin-bottom: 0.5rem;
+}
+
+.c-link-list__kicker-text {
+	display: block;
+	color: $color-brand-blue-dark;
+	font-weight: bold;
+	font-size: $font-size-small-2;
+	text-transform: uppercase;
+	transition: color $anim-fade-quick $anim-ease;
+
+	.c-link-list__kicker-link:hover &, .c-link-list__kicker-link:focus & {
+		color: $color-brand-orange;
+	}
+}
+
+.c-link-list__desc {
+	margin-top: 0.5rem;
 }

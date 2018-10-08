@@ -1,5 +1,6 @@
 {
     "hero" : true,
     "cartPrice" : true,
-    "mediaBlockDesc": "Welcome to my site!"
+    "mediaBlockDesc": "Welcome to my site!",
+    "kicker": "Kicker"
 }

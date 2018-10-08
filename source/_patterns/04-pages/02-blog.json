@@ -6,42 +6,62 @@
 		"styleModifier": "",
         "items": [
             {
+				"kickerLink": "#",
+				"kicker": "Web",
                 "url": "link.pages-blog-detail",
                 "cta": "Blog post 1"
             },
             {
+				"kickerLink": "#",
+				"kicker": "Weather",
                 "url": "link.pages-blog-detail",
                 "cta": "Blog post 2"
             },
             {
+				"kickerLink": "#",
+				"kicker": "Life",
                 "url": "link.pages-blog-detail",
                 "cta": "Blog post 3"
             },
 			{
+				"kickerLink": "#",
+				"kicker": "Kicker",
                 "url": "link.pages-blog-detail",
                 "cta": "Blog post 4"
             },
 			{
+				"kickerLink": "#",
+				"kicker": "Kicker",
                 "url": "link.pages-blog-detail",
                 "cta": "Blog post 5"
             },
             {
+				"kickerLink": "#",
+				"kicker": "Kicker",
                 "url": "link.pages-blog-detail",
                 "cta": "Blog post 6"
             },
             {
+				"kickerLink": "#",
+				"kicker": "Kicker",
                 "url": "link.pages-blog-detail",
                 "cta": "Blog post 7"
             },
 			{
+				"kickerLink": "#",
+				"kicker": "Kicker",
                 "url": "link.pages-blog-detail",
                 "cta": "Blog post 8"
             },
 			{
+				"kickerLink": "#",
+				"kicker": "Kicker",
                 "url": "link.pages-blog-detail",
                 "cta": "Blog post 9"
             },
 			{
+				"kickerLink": "#",
+				"kicker": "Kicker",
                 "url": "link.pages-blog-detail",
                 "cta": "Blog post 10"
             }

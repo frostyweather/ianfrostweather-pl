@@ -2,9 +2,18 @@
 <ul class="c-link-list {{ styleModifier }}">
 
     {{# items }}
-    <li class="c-link-list__item l-grid__item">
+    <li class="c-link-list__item">
 
             <div class="c-link-list__body">
+                {{# kicker }}
+                {{# kickerLink }}
+                <a href="{{ kickerLink }}" class="c-link-list__kicker-link">
+                {{/ kickerLink }}
+            		<span class="c-link-list__kicker-text">{{ kicker }}</span>
+                {{# kickerLink }}
+                </a>
+                {{/ kickerLink }}
+        		{{/ kicker }}
                 <a href="{{ url }}" class="c-link-list__link">
                     <span class="c-link-list__link-text">{{{ cta }}}</span>
                 </a><!--end c-link-list__link-->

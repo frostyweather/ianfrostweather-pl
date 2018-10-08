@@ -3,31 +3,31 @@
  */
 .c-pagination {
 	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
-	overflow: hidden;
 	margin-bottom: 1rem;
 }
 
 .c-pagination__item {
-	border-right: 1px solid $color-gray-15;
+
+	a {
+		padding-right: 1rem;
+		margin-right: 1rem;
+		color: $color-brand-blue-dark;
+		font-family: $font-secondary;
+		font-weight: bold;
+		text-transform: uppercase;
+		border-right: 3px solid $color-brand-orange;
+
+
+		&:hover, &:focus {
+			color: $color-brand-orange;
+		}
+	}
 
 	&:last-child {
-		border: 0;
-	}
-}
-
-.c-pagination__link {
-	padding: $pad;
-
-	.c-pagination__item.is-active & {
-		color: $color-brand-blue;
-		font-weight: bold;
-		pointer-events: none;
-	}
-
-	.c-pagination__item.is-disabled & {
-		color: $color-gray-15;
-		pointer-events: none;
+		a {
+			border-right: none;
+			margin-right: none;
+			padding-right: none;
+		}
 	}
 }

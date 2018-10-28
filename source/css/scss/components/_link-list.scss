@@ -2,11 +2,26 @@
     #LINK LIST
 \*------------------------------------*/
 
+.c-link-list--2up {
+	@media all and (min-width: $bp-small) {
+		display: flex;
+		flex-wrap: wrap;
+	}
+}
+
 .c-link-list__item {
 	margin-bottom: 2rem;
 
 	.l-grid & {
 		margin-bottom: 0;
+	}
+
+	.c-link-list--2up & {
+		margin-bottom: 1rem;
+
+		@media all and (min-width: $bp-small) {
+			width: 50%;
+		}
 	}
 }
 
@@ -28,6 +43,10 @@
 
 	.c-link-list__link:hover &, .c-link-list__link:focus & {
 		color: $color-brand-orange;
+	}
+
+	.c-link-list--small & {
+		font-size: $font-size-small-2;
 	}
 }
 
@@ -51,4 +70,9 @@
 
 .c-link-list__desc {
 	margin-top: 0.5rem;
+
+	.c-link-list--small & {
+		margin-top: 0.25rem;
+		font-size: $font-size-small-2;
+	}
 }

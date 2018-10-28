@@ -6,8 +6,17 @@
  * Article Header
  */
 .c-airplane {
-	position: fixed;
-	top: 50%;
-	animation: slideOut 2s linear forwards;
-	z-index: 5;
+	width: 100%;
+	margin-top: 2rem;
+	transform: rotate(-12deg);
+
+	&.js-airplane {
+		position: fixed;
+		top: 50%;
+		width: inherit;
+		margin-top: 2rem;
+		transform: rotate(0);
+		animation: slideOut 1.5s linear forwards;
+		z-index: 5;
+	}
 }

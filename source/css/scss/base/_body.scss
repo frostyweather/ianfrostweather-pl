@@ -6,11 +6,24 @@
  * Body base styles
  */
 body {
-	background: $color-white;
+	background: url('/wp-content/themes/ianfrostweatherv2/inc/snow.svg');
 	color: $color-gray-73;
 	font: 100%/1.5 $font;
 	-webkit-text-size-adjust: 100%;
 	min-height: 100vh;
 	display: flex;
 	flex-direction: column;
+	animation: snow 200s linear infinite;
+}
+
+/**
+ * Slide in
+ */
+@keyframes snow {
+	0% {
+		background-position: 0 100%;
+	}
+	100% {
+		background-position: 100% 200%;
+	}
 }

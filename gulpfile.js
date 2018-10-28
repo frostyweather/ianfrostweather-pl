@@ -7,6 +7,7 @@ var gulp = require('gulp'),
   path = require('path'),
   sass = require('gulp-sass'),
   concat = require("gulp-concat"),
+  autoprefixer = require("gulp-autoprefixer"),
   uglify = require("gulp-uglify"),
   browserSync = require('browser-sync').create(),
   argv = require('minimist')(process.argv.slice(2)),
@@ -40,6 +41,22 @@ gulp.task('pl-sass', function(){
     .pipe(sass().on('error', sass.logError))
     .pipe(gulp.dest(path.resolve(paths().public.css)));
 });
+
+/******************************************************
+ * AUTOPREFIXER
+ ******************************************************/
+gulp.task("prefix", () =>
+	gulp
+		.src("./public/css/frosty.css")
+		.pipe(
+			autoprefixer({
+				browsers: ["last 2 versions"],
+				cascade: false,
+				grid: true
+			})
+		)
+		.pipe(gulp.dest("./public/css/"))
+);
 
 /******************************************************
  * CONCATENATE AND MINIFY
@@ -157,7 +174,7 @@ gulp.task('pl-assets', gulp.series(
   'pl-copy:img',
   'pl-copy:favicon',
   'pl-copy:font',
-  gulp.series('pl-sass', function(done){done();}), //CSS tasks
+  gulp.series('pl-sass', "prefix", function(done){done();}), //CSS tasks
   'pl-copy:css',
   'pl-copy:styleguide',
   'pl-copy:styleguide-css',
@@ -233,7 +250,7 @@ function watch() {
     name: 'CSS',
     paths: [normalizePath(paths().source.css, '**', '*.scss')],
     config: { awaitWriteFinish: true },
-    tasks: gulp.series('pl-sass',  reloadCSS)
+    tasks: gulp.series('pl-sass', "prefix",  reloadCSS)
     },
     {
       name: 'Styleguide Files',

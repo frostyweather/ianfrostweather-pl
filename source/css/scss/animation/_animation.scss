@@ -4,7 +4,7 @@
 
 
 .js-slide {
-	animation: slideIn 1.5s linear;
+	animation: slideIn 1s linear;
 }
 
 
@@ -13,9 +13,14 @@
  */
 @keyframes slideIn {
 	0% {
+		opacity: 0;
 		transform: translateX(-100vw);
 	}
+	50% {
+		opacity: 0;
+	}
 	100% {
+		opacity: 1;
 		transform: translateX(0);
 	}
 }

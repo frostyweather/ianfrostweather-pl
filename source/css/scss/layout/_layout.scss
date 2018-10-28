@@ -25,7 +25,7 @@
  * Secondary section of 2 column layout
  */
 .l-page-layout--two-column-fixed {
-	@media all and (min-width: $bp-med) {
+	@media all and (min-width: $bp-large) {
 		display: flex;
 	}
 }
@@ -44,7 +44,7 @@
 		min-height: calc(100vh - 283px);
 		padding: 1rem;
 
-		@media all and (min-width: $bp-med) {
+		@media all and (min-width: $bp-large) {
 			margin-left: 2rem;
 		}
 	}
@@ -58,7 +58,6 @@
  *    responsive environments "sidebar"
  */
 .l-page-layout__secondary {
-	background: $color-white;
 	z-index: 2;
 
 	/**
@@ -67,7 +66,7 @@
 	 */
 	.l-page-layout--two-column > & {
 		z-index: 2;
-		@media all and (min-width: $bp-med) {
+		@media all and (min-width: $bp-large) {
 			width: 13rem;
 		}
 	}

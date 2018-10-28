@@ -8,7 +8,7 @@
 .c-primary-nav {
 	margin-left: auto;
 
-	@media all and (min-width: $bp-med) {
+	@media all and (min-width: $bp-large) {
 		margin-left: 0;
 	}
 }

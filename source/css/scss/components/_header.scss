@@ -8,11 +8,12 @@
 .c-header {
 	padding: 1rem;
 
-	@media all and (min-width: $bp-med) {
+	@media all and (min-width: $bp-large) {
 		position: sticky;
 		top: 0;
 		width: 15rem;
 		margin-bottom: 0;
+		background: $color-white;
 	}
 }
 
@@ -20,7 +21,7 @@
 	display: flex;
 	position: relative;
 
-	@media all and (min-width: $bp-med) {
+	@media all and (min-width: $bp-large) {
 		display: block;
 		margin: 0 auto;
 		max-width: $l-max-width;
@@ -30,7 +31,7 @@
 .c-header__controls {
 	margin-left: auto;
 
-	@media all and (min-width: $bp-med) {
+	@media all and (min-width: $bp-large) {
 		margin-left: 0;
 	}
 }

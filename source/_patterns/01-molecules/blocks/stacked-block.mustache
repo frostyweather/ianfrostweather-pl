@@ -23,6 +23,13 @@
 		{{# description }}
 		<p class="c-stacked-block__desc">{{ description }}</p>
 		{{/ description }}
+		{{# stackedBlockLinkList }}
+		{{# linkListHeading }}
+		<h3 class="c-stacked-block__list-heading">{{ linkListHeading }}</h3>
+		{{/ linkListHeading }}
+		{{> molecules-link-list }}
+		{{/ stackedBlockLinkList }}
+
 	</div><!-- end c-stacked-block__body -->
 
 	{{# stackedBlockFooter }}

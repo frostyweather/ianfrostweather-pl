@@ -12,7 +12,7 @@
 	margin-right: 2rem;
 	max-width: 10rem;
 
-	@media all and (min-width: $bp-med) {
+	@media all and (min-width: $bp-large) {
 		margin-right: 0;
 		max-width: none;
 	}

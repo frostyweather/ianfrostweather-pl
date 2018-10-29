@@ -2,59 +2,62 @@
 	"title" : "Projects",
 	"pageTitle": "Projects",
 	"htmlText": "<p>Frontend design is my cup of tea and I have worked on numerous projects focusing on the structure and organization of consistent HTML, CSS, and presentational Javascript. Whether it is a website redesign and corresponding design system for a Fortune 5 company, a site redesign for a small company in Pittsburgh, or somewhere in between, I am happy to help out.</p><p>I work quickly. I work modularly. I work in a way that will help organizations work fast but keep consistency with their brand across the board.</p><p>I am fortunate to have worked with some of the best designers and developers in the web design community. Together, we focus on collaborating to create a solid product that can be built upon in the future. Some of these projects are listed below.</p>",
-	"stackedBlockList" : [
-        {
-            "styleModifier" : "",
-			"title": "Unity Design System",
-			"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-			"stackedBlockLinkList": {
-				"linkListHeading": "Team",
-				"linkList": {
-					"styleModifier": "c-link-list--small c-link-list--2up",
-			        "items": [
-			            {
-							"kicker": false,
-			                "url": "#",
-			                "cta": "Brad Frost",
-							"description": "Frontend Lead"
-			            },
-						{
-							"kicker": false,
-			                "url": "#",
-			                "cta": "Josh Clark",
-							"description": "Project Manger"
-			            },
-						{
-							"kicker": false,
-			                "url": "#",
-			                "cta": "Dan Mall",
-							"description": "Creative Director"
-			            },
-						{
-							"kicker": false,
-			                "url": "#",
-			                "cta": "Matt D. Smith",
-							"description": "Visual Designer"
-			            }
-			        ]
-			    }
-			}
-        },
-		{
-            "styleModifier" : "",
-			"stackedBlockLink": {
-				"url": "#"
-			},
-			"title": "Harvard Business School Digital Initiative",
-			"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-        },
-		{
-            "styleModifier" : "",
-			"stackedBlockLink": {
-				"url": "#"
-			},
-			"title": "About.com",
-			"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-        }
-	]
+	"projectList": {
+		"styleModifier": "c-stacked-block-list--lined",
+		"stackedBlockList" : [
+	        {
+	            "styleModifier" : "",
+				"title": "Unity Design System",
+				"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+				"stackedBlockLinkList": {
+					"linkListHeading": "Team",
+					"linkList": {
+						"styleModifier": "c-link-list--small c-link-list--2up",
+				        "items": [
+				            {
+								"kicker": false,
+				                "url": "#",
+				                "cta": "Brad Frost",
+								"description": "Frontend Lead"
+				            },
+							{
+								"kicker": false,
+				                "url": "#",
+				                "cta": "Josh Clark",
+								"description": "Project Manger"
+				            },
+							{
+								"kicker": false,
+				                "url": "#",
+				                "cta": "Dan Mall",
+								"description": "Creative Director"
+				            },
+							{
+								"kicker": false,
+				                "url": "#",
+				                "cta": "Matt D. Smith",
+								"description": "Visual Designer"
+				            }
+				        ]
+				    }
+				}
+	        },
+			{
+	            "styleModifier" : "",
+				"stackedBlockLink": {
+					"url": "#"
+				},
+				"title": "Harvard Business School Digital Initiative",
+				"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+	        },
+			{
+	            "styleModifier" : "",
+				"stackedBlockLink": {
+					"url": "#"
+				},
+				"title": "About.com",
+				"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+	        }
+		]
+	}
 }

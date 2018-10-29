@@ -13,21 +13,25 @@
 	</div>
 
 	<div class="c-stacked-block__body">
-		{{# stackedBlockLink }}
-		<a href="{{ url }}" class="c-stacked-block__title-link">
-		{{/ stackedBlockLink }}
-			<h2 class="c-stacked-block__title">{{ title }}</h2>
-		{{# stackedBlockLink }}
-		</a>
-		{{/ stackedBlockLink }}
-		{{# description }}
-		<p class="c-stacked-block__desc">{{ description }}</p>
-		{{/ description }}
+		<div class="c-stacked-block__body-top">
+			{{# stackedBlockLink }}
+			<a href="{{ url }}" class="c-stacked-block__title-link">
+			{{/ stackedBlockLink }}
+				<h2 class="c-stacked-block__title">{{ title }}</h2>
+			{{# stackedBlockLink }}
+			</a>
+			{{/ stackedBlockLink }}
+			{{# description }}
+			<p class="c-stacked-block__desc">{{ description }}</p>
+			{{/ description }}
+		</div>
 		{{# stackedBlockLinkList }}
-		{{# linkListHeading }}
-		<h3 class="c-stacked-block__list-heading">{{ linkListHeading }}</h3>
-		{{/ linkListHeading }}
-		{{> molecules-link-list }}
+		<div class="c-stacked-block__body-bottom">
+			{{# linkListHeading }}
+			<h3 class="c-stacked-block__list-heading">{{ linkListHeading }}</h3>
+			{{/ linkListHeading }}
+			{{> molecules-link-list }}
+		</div>
 		{{/ stackedBlockLinkList }}
 
 	</div><!-- end c-stacked-block__body -->

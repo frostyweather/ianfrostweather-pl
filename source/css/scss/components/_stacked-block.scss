@@ -8,6 +8,11 @@
  .c-stacked-block {
 	 display: flex;
      flex-direction: column;
+
+     .c-stacked-block-list--lined & {
+         padding-bottom: 2rem;
+         border-bottom: 1px solid $color-gray-15;
+     }
  }
 
  .c-stacked-block__media {
@@ -16,6 +21,7 @@
 
  .c-stacked-block__img {
      display: block;
+      width: 100%;
      border: 1px solid $color-brand-orange;
      outline: 1px solid $color-brand-blue-dark;
 
@@ -32,6 +38,24 @@
  .c-stacked-block__body {
      max-width: $l-linelength;
      flex: 1;
+
+     @media all and (min-width: $bp-xl) {
+         display: flex;
+         max-width: none;
+     }
+ }
+
+ .c-stacked-block__body-top {
+     @media all and (min-width: $bp-xl) {
+        width: 50%;
+        margin-right: 2rem;
+     }
+ }
+
+ .c-stacked-block__body-bottom {
+     @media all and (min-width: $bp-xl) {
+        margin-left: auto;
+     }
  }
 
  .c-stacked-block__title-link {
@@ -67,10 +91,14 @@
 }
 
 .c-stacked-block-list__item {
-    margin-bottom: 2rem;
+    margin-bottom: 2.5rem;
 }
 
 .c-stacked-block__list-heading {
     text-transform: uppercase;
     margin: 1rem 0 0.5rem;
+
+    @media all and (min-width: $bp-xl) {
+        margin-top: 0;
+    }
 }

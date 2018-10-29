@@ -13,6 +13,10 @@
          padding-bottom: 2rem;
          border-bottom: 1px solid $color-gray-15;
      }
+
+     .c-stacked-block-list--lined .c-stacked-block-list__item:last-child & {
+         border-bottom: none;
+     }
  }
 
  .c-stacked-block__media {

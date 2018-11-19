@@ -4,9 +4,6 @@ window.addEventListener("scroll", function(event) {
     var height = element.offsetHeight;
     var sun = document.querySelector('.js-footer-sun');
 
-    console.log('offset = ' + offset);
-    console.log('height = ' + height);
-
     if (offset >= height) {
         sun.classList.add('is-risen');
     }

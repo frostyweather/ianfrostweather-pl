@@ -18,6 +18,16 @@
 	}
 }
 
+.c-head {
+	stroke: $color-gray-50;
+	transition: stroke $anim-fade-quick $anim-ease;
+
+	.c-logo-link:hover &,
+	.c-logo-link:focus & {
+		stroke: $color-brand-blue-dark;
+	}
+}
+
 .js-circle-1 {
 	transform: translateY(-500px);
 	animation: spinSlide 0.5s linear forwards 0.5s;
@@ -26,9 +36,23 @@
 .js-circle-2 {
 	transform: translateY(500px);
 	animation: spinSlide 0.5s linear forwards 0.25s;
+	stroke: $color-gray-50;
+	transition: stroke $anim-fade-quick $anim-ease;
+
+	.c-logo-link:hover &,
+	.c-logo-link:focus & {
+		stroke: $color-brand-blue-dark;
+	}
 }
 
 .js-circle-3 {
 	transform: translateY(-500px);
 	animation: spinSlide 0.5s forwards linear;
+	stroke: $color-gray-50;
+	transition: stroke $anim-fade-quick $anim-ease;
+
+	.c-logo-link:hover &,
+	.c-logo-link:focus & {
+		stroke: $color-brand-blue-dark;
+	}
 }

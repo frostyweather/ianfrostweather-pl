@@ -13,9 +13,9 @@ p {
  * Blockquote base styles
  */
 blockquote {
-    font-style:italic;
-    border-left: 1px solid $color-gray-50;
-    color: $color-gray-50;
+	font-style: italic;
+	border-left: 1px solid $color-gray-50;
+	color: $color-gray-50;
 	padding-left: $pad;
 	margin-bottom: $space;
 }
@@ -25,15 +25,27 @@ blockquote {
  */
 hr {
 	border: 0;
-    height: 2px;
-    background: $color-gray-15;
-    margin: $space-double 0;
+	height: 2px;
+	background: $color-gray-15;
+	margin: $space-double 0;
 }
 
 /**
  * Abbreviation base styles
  */
 abbr {
-    border-bottom: 1px dotted $color-gray-50;
-    cursor: help;
+	border-bottom: 1px dotted $color-gray-50;
+	cursor: help;
+}
+
+pre {
+	background: $color-gray-02;
+	border: 1px solid $color-gray-15;
+	font-size: $font-size-med-3;
+	padding: 1rem;
+	overflow-x: auto;
+
+	code {
+		border: 0;
+	}
 }

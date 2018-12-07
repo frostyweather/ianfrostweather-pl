@@ -6,12 +6,21 @@
 * 1) A passage of text, including various components (i.e. article, blog post)
 */
 .c-text-passage {
+	font-size: $font-size-med-3;
 
 	p {
 		margin-bottom: 2rem;
 
 		.c-link-list__item & {
 			margin-bottom: 0;
+		}
+
+		> code {
+			font-size: 1.25rem;
+			line-height: 1;
+			padding: 0.25rem 0;
+			background: $color-gray-02;
+			color: $color-brand-blue;
 		}
 	}
 
@@ -20,10 +29,12 @@
 	 */
 	a {
 		color: inherit;
-		box-shadow: inset 0px -1px 0px 0px $color-brand-blue-dark, inset 0px -2px 0px 0px $color-brand-orange;
+		box-shadow: inset 0px -1px 0px 0px $color-brand-blue-dark,
+			inset 0px -2px 0px 0px $color-brand-orange;
 		padding-bottom: 2px;
 
-		&:hover, &:focus {
+		&:hover,
+		&:focus {
 			color: $color-brand-orange;
 		}
 	}
@@ -36,15 +47,29 @@
 		border-left: 3px solid $color-gray-73;
 		color: $color-gray-50;
 		font-size: 1rem;
-	 }
+	}
 
-	 /**
+	img {
+		display: block;
+	}
+
+	figure {
+		margin-bottom: 2rem;
+		width: 100% !important;
+	}
+
+	figcaption {
+		color: $color-gray-50;
+		font-size: $font-size-small;
+	}
+
+	/**
 	  * First-level heading within text passage
 	  */
-	 h1 {
-		 margin-bottom: 1rem;
-		 text-transform: uppercase;
-	 }
+	h1 {
+		margin-bottom: 1rem;
+		text-transform: uppercase;
+	}
 
 	/**
 	 * Second-level heading within text passage
@@ -95,12 +120,11 @@
 		margin-bottom: 0.5rem;
 	}
 
-
 	/**
 	 * Unordered list within text passage
 	 * 1) Align text bullet with li text
 	 */
-	ul {
+	> ul {
 		list-style: disc;
 		margin-bottom: 2rem;
 		margin-left: 1rem;
@@ -114,7 +138,7 @@
 	/**
 	 * Ordered list within text passage
 	 */
-	ol {
+	> ol {
 		list-style: decimal;
 		margin-left: 1rem;
 		margin-bottom: 2rem;

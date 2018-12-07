@@ -22,7 +22,13 @@
 }
 
 .c-footer__inner {
+	padding: 1rem;
 	background: $color-brand-blue-dark;
+
+	@media all and (min-width: $bp-med) {
+		display: flex;
+		align-items: center;
+	}
 }
 
 .c-footer__sun {
@@ -40,5 +46,30 @@
 
 	&.is-risen {
 		transform: translateY(-40px);
+	}
+}
+
+.c-footer__links {
+	display: flex;
+	font-family: $font-secondary;
+
+	@media all and (min-width: $bp-med) {
+		margin-left: auto;
+	}
+}
+
+.c-footer__links-item {
+	margin-right: 2rem;
+
+	&:last-child {
+		margin-right: 0;
+	}
+}
+
+.c-footer__links-link {
+	color: $color-white;
+
+	&:hover, &:focus {
+		color: $color-brand-orange;
 	}
 }
